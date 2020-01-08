@@ -85,5 +85,6 @@ list(APPEND CORE_LIBS ${Matlab_LIBRARIES})
 add_definitions("-DMEX")
 compile_each("\
 blue_noise.cpp;\
+blue_noise_adaptive.cpp;\
 "
   "${CORE_LIBS};igl::core;igl::matlab")
